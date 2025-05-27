@@ -2,5 +2,8 @@
   "name": "@daves-dead-simple/open-ai-action",
   "version": "0.1.1",
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "@actions/core": "1.11.1",
+    "@actions/http-client": "2.2.3"
+  }
 }

@@ -1,6 +1,10 @@
 name: Dave's Dead Simple Open AI Action
 description: Simple action for Open AI chat completions
 inputs:
+  model:
+    description: Which Chat GPT model to use. Defaults to gpt-4o.
+    required: false
+    default: gpt-4o
   prompt:
     required: true
     description: The text to send to Open AI / Chat GPT
