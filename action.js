@@ -3,12 +3,12 @@ import { HttpClient } from "@actions/http-client";
 
 const openAiKey = process.env.OPEN_API_KEY;
 
-if (openAiKey === undefined) {
-  core.setFailed(`OPEN_API_KEY is not defined!`);
-  return;
-}
-
 async function go() {
+  if (openAiKey === undefined) {
+    core.setFailed(`OPEN_API_KEY is not defined!`);
+    return;
+  }
+
   try {
     const model = core.getInput("model");
     const prompt = core.getInput("prompt");
