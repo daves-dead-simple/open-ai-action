@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "type": "module",
   "scripts": {
-    "build": "esbuild ./action.js --bundle --outdir=dist --platform=node"
+    "build": "esbuild ./action.js --format=esm --bundle --outdir=dist --platform=node"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
