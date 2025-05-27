@@ -2,8 +2,14 @@
   "name": "@daves-dead-simple/open-ai-action",
   "version": "0.1.1",
   "type": "module",
+  "scripts": {
+    "build": "esbuild ./action.js --bundle --outdir=dist --platform=node"
+  },
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/http-client": "2.2.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.4"
   }
 }
