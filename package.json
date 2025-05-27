@@ -3,13 +3,13 @@
   "version": "0.1.1",
   "type": "module",
   "scripts": {
-    "build": "esbuild ./action.js --format=esm --bundle --outdir=dist --platform=node"
+    "build": "ncc build action.js -o dist"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/http-client": "2.2.3"
   },
   "devDependencies": {
-    "esbuild": "0.25.4"
+    "@vercel/ncc": "0.38.3"
   }
 }
