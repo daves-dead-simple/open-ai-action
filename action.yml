@@ -1,0 +1,9 @@
+name: Dave's Dead Simple Open AI Action
+description: Simple action for Open AI chat completions
+inputs:
+  prompt:
+    required: true
+    description: The text to send to Open AI / Chat GPT
+runs:
+  using: node20
+  main: index.mjs
